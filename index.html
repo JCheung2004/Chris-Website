@@ -26,9 +26,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home">HOME</a></li>
-        <li><a href="#band">ABOUT</a></li>
-        <li><a href="#tour">GEAR</a></li>
-        <li><a href="#contact">MUSIC</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#gear">GEAR</a></li>
+        <li><a href="#music">MUSIC</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
             <span class="caret"></span>
@@ -92,8 +92,12 @@
     <span class="sr-only">Next</span>
   </a>
 </div>    
+    
+  
+    
+    
 <!--------BAND SECTION----------------->    
-<div id="band" class="container text-center">
+<div id="about" class="container text-center">
   <h3>Chris Badenoch's Place for Sounds</h3>
   <p>We love music!</p>
   <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
@@ -103,7 +107,7 @@
     <div class="col-sm-4">
       <p class="text-center"><strong>Name</strong></p><br>
           <a href="#demo" data-toggle="collapse">
-      <img src="img/chrisSuit.jpg" class="img-circle person" alt="Chris">
+      <img src="img/chrisMic.jpg" class="img-circle person" alt="Chris">
         </a>
     <div id="demo" class="collapse">
       <p>Lorem ipsum Lorem ipsum Lorem ipsum </p>
@@ -136,9 +140,20 @@
   </div>
 </div>   
     
+      <!--------Blog Section------------>
+<div class="container-fluid bg-2 text-center">
+  <h3>What Am I?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h3>Where To Find Me?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+    
 <!----TOUR SECION----->  
     
-<div id="tour" class="bg-1">
+<div id="music" class="bg-1">
   <div class="container">
     <h3 class="text-center">Lorem ipsum </h3>
     <p class="text-center">Lorem ipsum Lorem ipsum Lorem ipsum <br>Lorem ipsum </p>
@@ -214,55 +229,7 @@
     
  <!------CONTACT ME FORM ---->
     <div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>Lorem ipsum </em></p>
-  <div class="row test">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Totnes, Devon</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +44 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p> 
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
-        </div>
-      </div> 
-    </div>
-  </div>
-    
-<!--------Blog Section------------>
-        <h3 class="text-center">From The Blog</h3> 
-<ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#home">Lorem ipsum </a></li>
-  <li><a data-toggle="tab" href="#menu1">Lorem ipsum </a></li>
-  <li><a data-toggle="tab" href="#menu2">Lorem ipsum </a></li>
-</ul>
-
-<div class="tab-content">
-  <div id="home" class="tab-pane fade in active">
-    <h2>Lorem ipsum </h2>
-    <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-  </div>
-  <div id="menu1" class="tab-pane fade">
-    <h2>Lorem ipsum </h2>
-    <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-  </div>
-  <div id="menu2" class="tab-pane fade">
-    <h2>Lorem ipsum </h2>
-    <p>Lorem ipsum Lorem ipsum Lorem ipsum </p>
-  </div>
-</div>        
+  
 </div>
 
 <!----------FOOTER----------------->
@@ -299,9 +266,9 @@ $(document).ready(function(){
     // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
     $('html, body').animate({
       scrollTop: $(hash).offset().top
-    }, 900, function(){
+    }, 750, function(){
 
-      // Add hash (#) to URL when done scrolling (default click behavior)
+      // Add hash (#) to URL when    done scrolling (default click behavior)
       window.location.hash = hash;
       });
     } // End if 

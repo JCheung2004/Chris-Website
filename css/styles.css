@@ -51,6 +51,7 @@
 
 /*BODY STYLES*/
 body {
+    
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
 }
@@ -91,10 +92,18 @@ body {
         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
 }
+  .bg-2 { 
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff;
+}
   .bg-1 {
       background: #2d2d30;
       color: #bdbdbd;
   }
+
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
 
@@ -187,3 +196,4 @@ footer a:hover {
     color: #777;
     text-decoration: none;
 }
+
