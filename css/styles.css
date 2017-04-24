@@ -64,6 +64,7 @@ body {
       padding: 80px 120px;
   }
 
+
 .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -79,7 +80,8 @@ body {
 .carousel-inner img {
     -webkit-filter: grayscale(90%);
     filter: grayscale(90%); /* make all photos black and white */ 
-    width: 100%; /* Set width to 100% */
+    width: 80%; /* Set width to 100% */
+    height: 80%;
     margin: auto;
 }
 
@@ -93,11 +95,15 @@ body {
     }
 }
   .bg-2 { 
+      
+      background-color: #2d2d30;
+  }
+.bg-3 h3{
+    color: #000;
+}
+  .bg-4 { 
       background-color: #2d2d30;
       color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff;
 }
   .bg-1 {
       background: #2d2d30;
@@ -106,6 +112,14 @@ body {
 
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
+
+#about h3{ 
+    color: #fff !important;
+}
+
+#gear h3{
+    color: #fff !important;
+}
 
 /* Remove rounded borders from list */
 .list-group-item:first-child {
@@ -128,34 +142,6 @@ body {
 .thumbnail p {
     margin-top: 15px;
     color: #555;
-}
-
-/* Black buttons with extra padding and without rounded borders */
-.btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #f1f1f1;
-    border-radius: 0;
-    transition: .2s;
-}
-
-/* On hover, the color of .btn will transition to white with black text */
-.btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-}
-
-/* Add a dark gray background color to the modal header and center text */
-.modal-header, h4, .close {
-    background-color: #333;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
-}
-
-.modal-header, .modal-body {
-    padding: 40px 50px;
 }
 
 .nav-tabs li a {
