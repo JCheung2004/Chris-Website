@@ -77,8 +77,8 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Ongoing</a></li>
-            <li><a href="#">Finished</a></li>
+            <li><a href="projects.html#ongoingProjects">Ongoing</a></li>
+            <li><a href="projects.html#completedProjects">Finished</a></li>
           </ul>
         </li>
           <li><a href="contact.php">CONTACT</a></li>
@@ -156,8 +156,5 @@ $(document).ready(function(){
 })
 </script>
   
-<script>alert('BTS')</script>
-
-
 </body>
 </html>

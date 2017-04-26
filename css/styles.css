@@ -215,7 +215,22 @@ footer a:hover {
     text-decoration: none;
 }
 
-footer iframe{
-    align-item
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+#ongoingProjects h2{
+    color: black;
+    text-align: center;
+    font-size: 55px;
+    
+}
+#ongoingProjects h4{
+    text-align: center;
+}
+
+#completedProjects h2, #completedProjects h4, #completedProjects p{
+    color: white;
 }
 
