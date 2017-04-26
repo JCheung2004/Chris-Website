@@ -124,6 +124,7 @@ body {
 #top h2{
     text-align: center;
     color: white;
+    font-size: 15px;
 }
 #about h3{ 
     color: #fff !important;

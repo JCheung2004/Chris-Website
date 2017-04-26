@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>Place for Sounds - Contact me</title>
+  <title>Place for Sounds - Contact Me</title>
   <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,7 +13,6 @@
 </head>
     
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
-   
     <?php
 		if (isset($_POST['submit'])) {
 		$error = "";
@@ -47,10 +46,10 @@
  
 		if (empty($error)) {
 		$from = 'From: ' . $name . ' <' . $email . '>';
-		$to = "my@email.com";
-		$subject = "New contact form message";
+		$to = "chrisbadenoch@hotmail.co.uk";
+		$subject = "Place for Sounds E-mail";
 		$content = $name . " has sent you a message: \n" . $message;
-		$success = "<h3>Thank you! Your message has been sent!</h3>";
+		$success = "<h1>Thank you! Your message has been sent!</h1>";
 		mail($to,$subject,$content,$from);
 		}
 		}
@@ -69,10 +68,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#gear">GEAR</a></li>
-        <li><a href="#music">MUSIC</a></li>
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#gear">GEAR</a></li>
+        <li><a href="index.html#music">MUSIC</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
             <span class="caret"></span>
@@ -82,7 +81,7 @@
             <li><a href="#">Finished</a></li>
           </ul>
         </li>
-          <li><a href="#music">CONTACT</a></li>
+          <li><a href="contact.php">CONTACT</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
@@ -94,8 +93,8 @@
     <br><br>
     <div id="top" class="container-fluid bg-2">
         <h1>P L A C E</h1>
-        <h1>F O R </h1>
-        <h1>S O U N D S</h1>
+        <h1>&emsp;F O R </h1>
+        <h1>&emsp; &emsp; &emsp; &emsp; &emsp;S O U N D S</h1>
         <h2>Chris Badenoch's Personal Music Site</h2>
     </div>
 
@@ -103,54 +102,41 @@
  <!------CONTACT ME FORM ---->
     <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
-        <?php
+
+  <p class="text-center"><em>For general enquiries</em></p>
+  <div class="row test">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Oxford, London</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +44 7530 701808</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: chrisbadenoch@hotmail.co.uk</p> 
+    </div>
+              <?php
 			if (!empty($error)) {
 			echo '<p class="error"><strong>Your message was NOT sent<br/> The following error(s) returned:</strong><br/>' . $error . '</p>';
 			} elseif (!empty($success)) {
 			echo $success;
 			}
 		?>
-        			<form action="contact.php" method="post">
-			
-				<label>Name:</label>
-				<input type="text" name="name" value="<?php if ($_POST['name']) { echo $_POST['name']; } ?>" />
-	
-				<label>Email:</label>
-				<input type="text" name="email" value="<?php if ($_POST['email']) { echo $_POST['email']; } ?>" />
-				
-				<label>Message:</label><br />
-				<textarea name="message" rows="20" cols="20"><?php if ($_POST['message']) { echo $_POST['message']; } ?></textarea>
-				
-				<label><img src="captcha.php"></label>
-				<input type="text" name="code"> <br /> 
- 
-				<input type="submit" class="submit" name="submit" value="Send message" />
-				
-			</form>
-  <p class="text-center"><em>For general enquiries</em></p>
-  <div class="row test">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Totnes, Devon</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +44 7530 701808</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: chrisbadenoch@hotmail.co.uk</p> 
-    </div>
+        		
+      <form method="post" name="contact_form" action="contact.php">
     <div class="col-md-8">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" value="<?php if ($_POST['name']) { echo $_POST['name']; } ?>" required>
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" value="<?php if ($_POST['email']) { echo $_POST['email']; } ?>" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"><?php if ($_POST['message']) { echo $_POST['message']; } ?></textarea>
       <div class="row">
         <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
+          <button class="btn pull-right" id="submit" value ="Send Message" name="submit" type="submit">Send</button>
         </div>
       </div> 
     </div>
+      </form>
   </div>      
 </div>
 
@@ -170,34 +156,8 @@ $(document).ready(function(){
 })
 </script>
   
-<!------------SCROLLING SCRIPT-------->
-    <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#home']").on('click', function(event) {
+<script>alert('BTS')</script>
 
-  // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 750, function(){
-
-      // Add hash (#) to URL when    done scrolling (default click behavior)
-      window.location.hash = hash;
-      });
-    } // End if 
-  });
-})
-</script>
 
 </body>
 </html>
