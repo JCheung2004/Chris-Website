@@ -135,6 +135,11 @@ body {
     color: #fff !important;
 }
 
+#music img{
+    width: 200px;
+    height: 250px
+}
+
 /* Remove rounded borders from list */
 .list-group-item:first-child {
     border-top-right-radius: 0;
@@ -203,5 +208,9 @@ footer a {
 footer a:hover {
     color: #777;
     text-decoration: none;
+}
+
+footer iframe{
+    align-item
 }
 
