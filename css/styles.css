@@ -230,7 +230,19 @@ footer a:hover {
     text-align: center;
 }
 
-#completedProjects h2, #completedProjects h4, #completedProjects p{
+#completedProjects h2{
     color: white;
+    text-align: center;
+    font-size: 55px;
 }
+
+#completedProjects h4{
+    color: white;
+    text-align: center
+}
+#completedProjects p{
+    color: white;
+
+}
+
 
