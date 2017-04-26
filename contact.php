@@ -5,6 +5,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Place for Sounds - Contact Me</title>
   <meta charset="utf-8">
+          <meta name="description" content="Chris Badenoch's personal music website, made to as a resource for his sounds.">
+  <meta name="keywords" content="Guitar, Music, Jazz, Songs, Independent, Personal, Musician, Oxford, Brookes, University, Electronic, Weird">
+  <meta name="author" content="Chris Badenoch">
       <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
