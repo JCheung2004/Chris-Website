@@ -122,7 +122,6 @@ body {
 }
 
 #about img{
-    width: 40%;
     margin-bottom: 20px;
 }
 
@@ -133,11 +132,6 @@ body {
 
 #gear h3{
     color: #fff !important;
-}
-
-#music img{
-    width: 200px;
-    height: 250px
 }
 
 /* Remove rounded borders from list */
