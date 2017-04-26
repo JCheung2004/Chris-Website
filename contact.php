@@ -82,7 +82,6 @@
           </ul>
         </li>
           <li><a href="contact.php">CONTACT</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
   </div>
