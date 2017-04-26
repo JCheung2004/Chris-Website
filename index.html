@@ -11,7 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
     
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
    
  <!---------NAVIGATION BAR----------->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -48,7 +48,14 @@
   <!---------NAVIGATION BAR----------->
      <!---------NAVIGATION BAR----------->
      <!---------NAVIGATION BAR----------->
-     
+    <br><br>
+    <div id="top" class="container-fluid bg-2">
+        <h1>P L A C E</h1>
+        <h1>F O R </h1>
+        <h1>S O U N D S</h1>
+        <h2>Chris Badenoch's Personal Music Site</h2>
+    </div>
+   <div id="home2">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -89,10 +96,10 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>    
+</div>  
+    </div>
       <!--------ABOUT SECTION----------->
 <div id="about" class="container-fluid bg-2 text-center">
-  <h3>Chris Badenoch's Place for Sounds</h3>
     <img src="img/chrisMerlie.jpg" class="img-circle" alt="Chris with Merlie">
 </div>
 
@@ -117,12 +124,14 @@
       <div class="col-sm-4">
           <h2>Yamaha FX370C</h2>
       <p>Electric-acoustic guitar I have used for pretty much everything.</p>
+          <br><br><br>
       <img src="img/Yamaha%20FX370C%20Electric-Acoustic.jpg" alt="Yamaha FX370C" width="350" height="300">
     </div>
       
       <div class="col-sm-4">
           <h2>Fender Squier Jazz Bass</h2>
       <p>Had some bassy needs so picked this up. Plays real nice but I'm not a very experienced bassist so can't comment on much else!  I play it through the Exelsior since it has a 15" speaker or if I'm lazy (or it's late at night) I DI it.</p>
+          <br>
       <img src="img/Fender%20Squier%20Jazz%20Bass.jpg" alt="Fender Squier Jazz Bass" width="350" height="300">
     </div>
         </div>
@@ -131,6 +140,7 @@
     <div class="col-sm-4">
         <h2>Focusrite Scarlet 202i2 Interface</h2>
       <p>First piece of kit I picked up when I got frustrated with my 8-track. Really impoved workflow and while I've read negative reviews of these models I've never had any problems.</p>
+        <br>
       <img src="img/Scarlet%202i2%20Interface.jpg" alt="Focusrite Scarlet 2021i2 Interface" width="350" height="300">
     </div>
 
@@ -160,12 +170,14 @@
       <div class="col-sm-4">
           <h2>Electro-Harmonix Holy Grail</h2>
       <p>Really solid pedal; always a bit wary of digital reverb but this one's a beaut.</p>
+          <br><br>
       <img src="img/Electro-Harmonix%20Holy%20Grail%20Reverb%20Pedal.jpg" alt="Electro-Harmonix Holy Grail" width="350" height="300">
     </div>
       
       <div class="col-sm-4">
           <h2>Line 6 DL4</h2>
       <p>Crazy amount of stuff you can do with this one. Love daisy-chaining it with the Ditto and the Holy Grail to build some atmospheric goodness.</p>
+          <br>
       <img src="img/Line6%20DL4%20Delay%20Pedal.jpg" alt="Line 6 DL4" width="350" height="300">
     </div>
         </div>
@@ -191,6 +203,7 @@
         </div>
   </div>
     
+    
     <!--------MUSIC SECTION----------------->    
 <div id="music" class="container text-center">
   <h3>Some of my completed works</h3>
@@ -209,7 +222,7 @@
     </div>
     </div>     
     <div class="col-sm-4">
-      <p class="text-center"><strong>Nude ft. Merlie (Radiohead Cover)</strong></p><br>
+      <p class="text-center"><strong>Nude with Merlie (Radiohead Cover)</strong></p><br>
           <a href="#demo2" data-toggle="collapse">
       <img src="img/chrisRestaurant.jpg" class="img-circle person" alt="Chris">
         </a>
@@ -219,7 +232,7 @@
     </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Reckoner ft. Merlie (Radiohead Cover)</strong></p><br>
+      <p class="text-center"><strong>Reckoner with Merlie (Radiohead Cover)</strong></p><br>
           <a href="#demo3" data-toggle="collapse">
       <img src="img/chrisKitchen.jpg" class="img-circle person" alt="Chris">
             </a>
@@ -237,7 +250,7 @@
 
 <!----------FOOTER----------------->
     <footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+  <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
         <p>©Copyright 2017 Place for Sounds. All rights reserved. Site designed by <a href="https://www.facebook.com/jacky.cheung.733">Jacky Cheung</a></p>
@@ -255,7 +268,7 @@ $(document).ready(function(){
     <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
 
   // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {

@@ -113,6 +113,18 @@ body {
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
 
+#top h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+#top h2{
+    text-align: center;
+    color: white;
+}
 #about h3{ 
     color: #fff !important;
 }
