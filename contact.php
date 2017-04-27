@@ -109,7 +109,7 @@
   <div class="row test">
     <div class="col-md-4">
       <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Oxford, London</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Oxford, Oxfordshire</p>
       <p><span class="glyphicon glyphicon-phone"></span>Phone: +44 7530 701808</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: chrisbadenoch@hotmail.co.uk</p> 
     </div>
